@@ -6,8 +6,7 @@
         <p>no content for parent</p>
     </ng-content>
 </div>
-<div class="actions">
-    <ng-content select="[slot='parent-button']">
-        <p>no button for parent</p>
-    </ng-content>
-</div>
+<pj-actions>
+    <ng-content select="[slot='btn-close']" slot="btn-close-actions"></ng-content>
+    <ng-content select="[slot='btn-confirm']" ngProjectAs="btn-confirm-actions"></ng-content>
+</pj-actions>
