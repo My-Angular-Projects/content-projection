@@ -1,6 +1,8 @@
 <pj-parent>
     <h2 slot="parent-title">parent title</h2>
     <p slot="parent-content">parent content here</p>
-    <button slot="btn-close">close</button>
-    <button slot="btn-confirm">confirm</button>
+    <ng-container slot="btn-actions">
+        <button>close</button>
+        <button>confirm</button>
+    </ng-container>
 </pj-parent>
